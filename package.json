@@ -31,6 +31,6 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/freakmaxi/locking-center-client-js"
+    "url": "git+https://github.com/freakmaxi/locking-center-client-js.git"
   }
 }
