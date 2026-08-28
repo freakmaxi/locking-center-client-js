@@ -1,0 +1,36 @@
+{
+  "name": "@freakmaxi/locking-center-client",
+  "version": "1.0.0",
+  "description": "Node.js client for Locking-Center, a TCP mutex point that synchronizes access to shared resources between services",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node --check src/index.js && node --check src/packet.js && node --check src/locking-center.js",
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:unit": "node --test test/encoding.test.js",
+    "test:integration": "node --test test/integration.test.js"
+  },
+  "keywords": [
+    "mutex",
+    "lock",
+    "distributed-lock",
+    "locking-center",
+    "tcp"
+  ],
+  "author": "freakmaxi",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freakmaxi/locking-center"
+  }
+}
